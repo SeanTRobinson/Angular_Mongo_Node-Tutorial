@@ -1,0 +1,524 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/bin/npm', 'install', '-g', 'jshint' ]
+info using npm@1.1.4
+info using node@v0.6.12
+verbose config file /home/sean/.npmrc
+verbose config file /usr/etc/npmrc
+verbose config file /usr/share/npm/npmrc
+silly exec /usr/bin/node "/usr/share/npm/bin/npm-get-uid-gid.js" "nobody" 1000
+silly spawning [ '/usr/bin/node',
+silly spawning   [ '/usr/share/npm/bin/npm-get-uid-gid.js', 'nobody', 1000 ],
+silly spawning   null ]
+silly output from getuid/gid {"uid":65534,"gid":1000}
+silly output from getuid/gid 
+verbose cache add [ 'jshint', null ]
+silly cache add: name, spec, args [ undefined, 'jshint', [ 'jshint', null ] ]
+verbose parsed url { pathname: 'jshint', path: 'jshint', href: 'jshint' }
+verbose addNamed [ 'jshint', '' ]
+verbose addNamed [ null, '' ]
+silly name, range, hasData [ 'jshint', '', false ]
+verbose raw, before any munging jshint
+verbose url resolving [ 'http://registry.npmjs.org/', './jshint' ]
+verbose url resolved http://registry.npmjs.org/jshint
+verbose etag "96IYI629EMPIZOPKZONBIW729"
+http GET http://registry.npmjs.org/jshint
+http 304 http://registry.npmjs.org/jshint
+silly get cb [ 304,
+silly get cb   { date: 'Wed, 30 Jul 2014 21:32:31 GMT',
+silly get cb     via: '1.1 varnish',
+silly get cb     'last-modified': 'Wed, 30 Jul 2014 21:32:31 GMT',
+silly get cb     'cache-control': 'max-age=60',
+silly get cb     etag: '"96IYI629EMPIZOPKZONBIW729"',
+silly get cb     connection: 'keep-alive',
+silly get cb     'x-served-by': 'cache-ams4126-AMS',
+silly get cb     'x-cache': 'HIT',
+silly get cb     'x-cache-hits': '1',
+silly get cb     'x-timer': 'S1406755951.331378,VS0,VE381',
+silly get cb     vary: 'Accept' } ]
+verbose etag jshint from cache
+silly name, range, hasData 2 [ 'jshint', '', true ]
+silly versions [ 'jshint',
+silly versions   [ '0.1.8',
+silly versions     '0.1.9',
+silly versions     '0.2.0',
+silly versions     '0.2.1',
+silly versions     '0.2.2',
+silly versions     '0.2.3',
+silly versions     '0.3.0',
+silly versions     '0.3.1',
+silly versions     '0.4.0',
+silly versions     '0.5.0',
+silly versions     '0.5.1',
+silly versions     '0.5.2',
+silly versions     '0.5.3',
+silly versions     '0.5.4',
+silly versions     '0.5.5',
+silly versions     '0.5.6',
+silly versions     '0.5.7',
+silly versions     '0.5.8',
+silly versions     '0.5.9',
+silly versions     '0.6.0',
+silly versions     '0.6.1',
+silly versions     '0.6.2',
+silly versions     '0.6.3',
+silly versions     '0.7.0',
+silly versions     '0.7.1',
+silly versions     '0.7.2',
+silly versions     '0.7.3',
+silly versions     '0.8.0',
+silly versions     '0.8.1',
+silly versions     '0.8.2',
+silly versions     '0.9.0',
+silly versions     '0.9.1',
+silly versions     '1.0.0',
+silly versions     '1.1.0',
+silly versions     '2.0.0',
+silly versions     '2.0.1',
+silly versions     '2.1.0',
+silly versions     '2.1.1',
+silly versions     '2.1.2',
+silly versions     '2.1.3',
+silly versions     '2.1.4',
+silly versions     '2.1.5',
+silly versions     '2.1.6',
+silly versions     '2.1.7',
+silly versions     '2.1.8',
+silly versions     '2.1.9',
+silly versions     '2.1.10',
+silly versions     '2.1.11',
+silly versions     '2.2.0',
+silly versions     '2.3.0',
+silly versions     '2.4.0',
+silly versions     '2.4.1',
+silly versions     '2.4.2',
+silly versions     '2.4.3',
+silly versions     '2.4.4',
+silly versions     '2.5.0',
+silly versions     '2.5.1',
+silly versions     '2.5.2' ] ]
+verbose bin dist [ '0.6-ares1.7.5-evundefined-openssl1.0.1-v83.7.12.22-linux-x64-3.11.0-26-generic',
+verbose bin dist   { shasum: 'bec223d5149e49ef6ea96dcf8b3504a27613e8be',
+verbose bin dist     tarball: 'http://registry.npmjs.org/jshint/-/jshint-2.5.2.tgz' } ]
+verbose caching /home/sean/.npm/jshint/2.5.2/package/package.json
+verbose loadDefaults jshint@2.5.2
+silly resolved [ { name: 'jshint',
+silly resolved     version: '2.5.2',
+silly resolved     homepage: 'http://jshint.com/',
+silly resolved     description: 'Static analysis tool for JavaScript',
+silly resolved     author: 
+silly resolved      { name: 'Anton Kovalyov',
+silly resolved        email: 'anton@kovalyov.net',
+silly resolved        url: 'http://anton.kovalyov.net/' },
+silly resolved     repository: { type: 'git', url: 'git://github.com/jshint/jshint.git' },
+silly resolved     bugs: { url: 'https://github.com/jshint/jshint/issues' },
+silly resolved     bin: { jshint: './bin/jshint' },
+silly resolved     scripts: 
+silly resolved      { data: 'node scripts/generate-identifier-data',
+silly resolved        build: 'node bin/build',
+silly resolved        test: 'nodeunit tests tests/regression tests/unit',
+silly resolved        pretest: 'jshint src' },
+silly resolved     main: './src/jshint.js',
+silly resolved     dependencies: 
+silly resolved      { shelljs: '0.3.x',
+silly resolved        underscore: '1.6.x',
+silly resolved        cli: '0.6.x',
+silly resolved        minimatch: '0.x.x',
+silly resolved        htmlparser2: '3.7.x',
+silly resolved        'console-browserify': '1.1.x',
+silly resolved        exit: '0.1.x',
+silly resolved        'strip-json-comments': '0.1.x' },
+silly resolved     devDependencies: 
+silly resolved      { jshint: '2.5.x',
+silly resolved        browserify: '4.x',
+silly resolved        coveraje: '0.2.x',
+silly resolved        nodeunit: '0.9.x',
+silly resolved        sinon: '1.9.x',
+silly resolved        'unicode-6.3.0': '0.1.x',
+silly resolved        regenerate: '0.6.x' },
+silly resolved     licenses: 
+silly resolved      [ { type: 'MIT',
+silly resolved          url: 'https://github.com/jshint/jshint/blob/master/LICENSE' } ],
+silly resolved     preferGlobal: true,
+silly resolved     files: [ 'bin', 'src', 'data', 'dist' ],
+silly resolved     _id: 'jshint@2.5.2',
+silly resolved     optionalDependencies: {},
+silly resolved     engines: { node: '*' },
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.4',
+silly resolved     _nodeVersion: 'v0.6.12',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'jshint' } ]
+info into /usr/local/lib jshint@2.5.2
+info installOne jshint@2.5.2
+verbose from cache /home/sean/.npm/jshint/2.5.2/package/package.json
+info unbuild /usr/local/lib/node_modules/jshint
+verbose mkdir (expected) error ENOENT, no such file or directory '/usr/local/lib/node_modules/___jshint.npm'
+verbose mkdir done: /usr/local/lib/node_modules/___jshint.npm 755
+verbose unpack_ uid, gid [ 65534, 1000 ]
+verbose unpackTarget /usr/local/lib/node_modules/jshint
+silly gunzTarPerm modes [ '755', '644' ]
+silly afterUntar ok
+silly asyncMap in gTP /usr/local/lib/node_modules/___jshint.npm/package
+silly asyncMap in gTP /usr/local/lib/node_modules/___jshint.npm/package/package.json
+silly asyncMap in gTP /usr/local/lib/node_modules/___jshint.npm/package/bin
+silly asyncMap in gTP /usr/local/lib/node_modules/___jshint.npm/package/bin/jshint
+silly asyncMap in gTP /usr/local/lib/node_modules/___jshint.npm/package/bin/changelog
+silly asyncMap in gTP /usr/local/lib/node_modules/___jshint.npm/package/bin/apply
+silly asyncMap in gTP /usr/local/lib/node_modules/___jshint.npm/package/bin/land
+silly asyncMap in gTP /usr/local/lib/node_modules/___jshint.npm/package/bin/build
+silly asyncMap in gTP /usr/local/lib/node_modules/___jshint.npm/package/data
+silly asyncMap in gTP /usr/local/lib/node_modules/___jshint.npm/package/data/non-ascii-identifier-start.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___jshint.npm/package/data/non-ascii-identifier-part-only.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___jshint.npm/package/data/ascii-identifier-data.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___jshint.npm/package/dist
+silly asyncMap in gTP /usr/local/lib/node_modules/___jshint.npm/package/dist/jshint-rhino.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___jshint.npm/package/dist/jshint.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___jshint.npm/package/src
+silly asyncMap in gTP /usr/local/lib/node_modules/___jshint.npm/package/src/messages.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___jshint.npm/package/src/vars.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___jshint.npm/package/src/lex.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___jshint.npm/package/src/style.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___jshint.npm/package/src/jshint.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___jshint.npm/package/src/state.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___jshint.npm/package/src/reg.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___jshint.npm/package/src/cli.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___jshint.npm/package/src/platforms
+silly asyncMap in gTP /usr/local/lib/node_modules/___jshint.npm/package/src/platforms/rhino.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___jshint.npm/package/src/reporters
+silly asyncMap in gTP /usr/local/lib/node_modules/___jshint.npm/package/src/reporters/jslint_xml.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___jshint.npm/package/src/reporters/default.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___jshint.npm/package/src/reporters/non_error.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___jshint.npm/package/src/reporters/checkstyle.js
+verbose gunzed /usr/local/lib/node_modules/___jshint.npm/package
+verbose rm'ed /usr/local/lib/node_modules/jshint
+verbose renamed [ '/usr/local/lib/node_modules/___jshint.npm/package',
+verbose renamed   '/usr/local/lib/node_modules/jshint' ]
+verbose caching /usr/local/lib/node_modules/jshint/package.json
+verbose loadDefaults jshint@2.5.2
+info preinstall jshint@2.5.2
+verbose from cache /usr/local/lib/node_modules/jshint/package.json
+verbose readDependencies: using package.json deps
+verbose from cache /usr/local/lib/node_modules/jshint/package.json
+verbose readDependencies: using package.json deps
+verbose cache add [ 'shelljs@0.3.x', null ]
+silly cache add: name, spec, args [ undefined, 'shelljs@0.3.x', [ 'shelljs@0.3.x', null ] ]
+verbose parsed url { pathname: 'shelljs@0.3.x',
+verbose parsed url   path: 'shelljs@0.3.x',
+verbose parsed url   href: 'shelljs@0.3.x' }
+silly cache add: name, spec, args [ 'shelljs', '0.3.x', [ 'shelljs', '0.3.x' ] ]
+verbose parsed url { pathname: '0.3.x', path: '0.3.x', href: '0.3.x' }
+verbose addNamed [ 'shelljs', '0.3.x' ]
+verbose addNamed [ null, '>=0.3.0- <0.4.0-' ]
+silly name, range, hasData [ 'shelljs', '>=0.3.0- <0.4.0-', false ]
+verbose raw, before any munging shelljs
+verbose url resolving [ 'http://registry.npmjs.org/', './shelljs' ]
+verbose url resolved http://registry.npmjs.org/shelljs
+http GET http://registry.npmjs.org/shelljs
+verbose cache add [ 'underscore@1.6.x', null ]
+silly cache add: name, spec, args [ undefined, 'underscore@1.6.x', [ 'underscore@1.6.x', null ] ]
+verbose parsed url { pathname: 'underscore@1.6.x',
+verbose parsed url   path: 'underscore@1.6.x',
+verbose parsed url   href: 'underscore@1.6.x' }
+silly cache add: name, spec, args [ 'underscore', '1.6.x', [ 'underscore', '1.6.x' ] ]
+verbose parsed url { pathname: '1.6.x', path: '1.6.x', href: '1.6.x' }
+verbose addNamed [ 'underscore', '1.6.x' ]
+verbose addNamed [ null, '>=1.6.0- <1.7.0-' ]
+silly name, range, hasData [ 'underscore', '>=1.6.0- <1.7.0-', false ]
+verbose raw, before any munging underscore
+verbose url resolving [ 'http://registry.npmjs.org/', './underscore' ]
+verbose url resolved http://registry.npmjs.org/underscore
+http GET http://registry.npmjs.org/underscore
+verbose cache add [ 'cli@0.6.x', null ]
+silly cache add: name, spec, args [ undefined, 'cli@0.6.x', [ 'cli@0.6.x', null ] ]
+verbose parsed url { pathname: 'cli@0.6.x', path: 'cli@0.6.x', href: 'cli@0.6.x' }
+silly cache add: name, spec, args [ 'cli', '0.6.x', [ 'cli', '0.6.x' ] ]
+verbose parsed url { pathname: '0.6.x', path: '0.6.x', href: '0.6.x' }
+verbose addNamed [ 'cli', '0.6.x' ]
+verbose addNamed [ null, '>=0.6.0- <0.7.0-' ]
+silly name, range, hasData [ 'cli', '>=0.6.0- <0.7.0-', false ]
+verbose cache add [ 'minimatch@0.x.x', null ]
+silly cache add: name, spec, args [ undefined, 'minimatch@0.x.x', [ 'minimatch@0.x.x', null ] ]
+verbose parsed url { pathname: 'minimatch@0.x.x',
+verbose parsed url   path: 'minimatch@0.x.x',
+verbose parsed url   href: 'minimatch@0.x.x' }
+silly cache add: name, spec, args [ 'minimatch', '0.x.x', [ 'minimatch', '0.x.x' ] ]
+verbose parsed url { pathname: '0.x.x', path: '0.x.x', href: '0.x.x' }
+verbose addNamed [ 'minimatch', '0.x.x' ]
+verbose addNamed [ null, '>=0.0.0- <1.0.0-' ]
+silly name, range, hasData [ 'minimatch', '>=0.0.0- <1.0.0-', false ]
+verbose cache add [ 'htmlparser2@3.7.x', null ]
+silly cache add: name, spec, args [ undefined, 'htmlparser2@3.7.x', [ 'htmlparser2@3.7.x', null ] ]
+verbose parsed url { pathname: 'htmlparser2@3.7.x',
+verbose parsed url   path: 'htmlparser2@3.7.x',
+verbose parsed url   href: 'htmlparser2@3.7.x' }
+silly cache add: name, spec, args [ 'htmlparser2', '3.7.x', [ 'htmlparser2', '3.7.x' ] ]
+verbose parsed url { pathname: '3.7.x', path: '3.7.x', href: '3.7.x' }
+verbose addNamed [ 'htmlparser2', '3.7.x' ]
+verbose addNamed [ null, '>=3.7.0- <3.8.0-' ]
+silly name, range, hasData [ 'htmlparser2', '>=3.7.0- <3.8.0-', false ]
+verbose cache add [ 'console-browserify@1.1.x', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'console-browserify@1.1.x',
+silly cache add: name, spec, args   [ 'console-browserify@1.1.x', null ] ]
+verbose parsed url { pathname: 'console-browserify@1.1.x',
+verbose parsed url   path: 'console-browserify@1.1.x',
+verbose parsed url   href: 'console-browserify@1.1.x' }
+silly cache add: name, spec, args [ 'console-browserify',
+silly cache add: name, spec, args   '1.1.x',
+silly cache add: name, spec, args   [ 'console-browserify', '1.1.x' ] ]
+verbose parsed url { pathname: '1.1.x', path: '1.1.x', href: '1.1.x' }
+verbose addNamed [ 'console-browserify', '1.1.x' ]
+verbose addNamed [ null, '>=1.1.0- <1.2.0-' ]
+silly name, range, hasData [ 'console-browserify', '>=1.1.0- <1.2.0-', false ]
+verbose cache add [ 'exit@0.1.x', null ]
+silly cache add: name, spec, args [ undefined, 'exit@0.1.x', [ 'exit@0.1.x', null ] ]
+verbose parsed url { pathname: 'exit@0.1.x',
+verbose parsed url   path: 'exit@0.1.x',
+verbose parsed url   href: 'exit@0.1.x' }
+silly cache add: name, spec, args [ 'exit', '0.1.x', [ 'exit', '0.1.x' ] ]
+verbose parsed url { pathname: '0.1.x', path: '0.1.x', href: '0.1.x' }
+verbose addNamed [ 'exit', '0.1.x' ]
+verbose addNamed [ null, '>=0.1.0- <0.2.0-' ]
+silly name, range, hasData [ 'exit', '>=0.1.0- <0.2.0-', false ]
+verbose raw, before any munging cli
+verbose url resolving [ 'http://registry.npmjs.org/', './cli' ]
+verbose url resolved http://registry.npmjs.org/cli
+http GET http://registry.npmjs.org/cli
+verbose raw, before any munging minimatch
+verbose url resolving [ 'http://registry.npmjs.org/', './minimatch' ]
+verbose url resolved http://registry.npmjs.org/minimatch
+http GET http://registry.npmjs.org/minimatch
+verbose raw, before any munging htmlparser2
+verbose url resolving [ 'http://registry.npmjs.org/', './htmlparser2' ]
+verbose url resolved http://registry.npmjs.org/htmlparser2
+http GET http://registry.npmjs.org/htmlparser2
+verbose raw, before any munging console-browserify
+verbose url resolving [ 'http://registry.npmjs.org/', './console-browserify' ]
+verbose url resolved http://registry.npmjs.org/console-browserify
+http GET http://registry.npmjs.org/console-browserify
+verbose raw, before any munging exit
+verbose url resolving [ 'http://registry.npmjs.org/', './exit' ]
+verbose url resolved http://registry.npmjs.org/exit
+http GET http://registry.npmjs.org/exit
+verbose cache add [ 'strip-json-comments@0.1.x', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'strip-json-comments@0.1.x',
+silly cache add: name, spec, args   [ 'strip-json-comments@0.1.x', null ] ]
+verbose parsed url { pathname: 'strip-json-comments@0.1.x',
+verbose parsed url   path: 'strip-json-comments@0.1.x',
+verbose parsed url   href: 'strip-json-comments@0.1.x' }
+silly cache add: name, spec, args [ 'strip-json-comments',
+silly cache add: name, spec, args   '0.1.x',
+silly cache add: name, spec, args   [ 'strip-json-comments', '0.1.x' ] ]
+verbose parsed url { pathname: '0.1.x', path: '0.1.x', href: '0.1.x' }
+verbose addNamed [ 'strip-json-comments', '0.1.x' ]
+verbose addNamed [ null, '>=0.1.0- <0.2.0-' ]
+silly name, range, hasData [ 'strip-json-comments', '>=0.1.0- <0.2.0-', false ]
+verbose raw, before any munging strip-json-comments
+verbose url resolving [ 'http://registry.npmjs.org/', './strip-json-comments' ]
+verbose url resolved http://registry.npmjs.org/strip-json-comments
+http GET http://registry.npmjs.org/strip-json-comments
+http 200 http://registry.npmjs.org/underscore
+silly get cb [ 200,
+silly get cb   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+silly get cb     etag: '"4Z68IIOH9LR29STM1X38690L"',
+silly get cb     'content-type': 'application/json',
+silly get cb     'cache-control': 'max-age=60',
+silly get cb     'content-length': '30906',
+silly get cb     'accept-ranges': 'bytes',
+silly get cb     date: 'Wed, 30 Jul 2014 21:32:32 GMT',
+silly get cb     via: '1.1 varnish',
+silly get cb     age: '201',
+silly get cb     connection: 'keep-alive',
+silly get cb     'x-served-by': 'cache-ams4120-AMS',
+silly get cb     'x-cache': 'HIT',
+silly get cb     'x-cache-hits': '1',
+silly get cb     'x-timer': 'S1406755952.189173,VS0,VE0',
+silly get cb     vary: 'Accept' } ]
+silly name, range, hasData 2 [ 'underscore', '>=1.6.0- <1.7.0-', true ]
+silly versions [ 'underscore',
+silly versions   [ '1.0.3',
+silly versions     '1.0.4',
+silly versions     '1.1.0',
+silly versions     '1.1.1',
+silly versions     '1.1.2',
+silly versions     '1.1.3',
+silly versions     '1.1.4',
+silly versions     '1.1.5',
+silly versions     '1.1.6',
+silly versions     '1.1.7',
+silly versions     '1.2.0',
+silly versions     '1.2.1',
+silly versions     '1.2.2',
+silly versions     '1.2.3',
+silly versions     '1.2.4',
+silly versions     '1.3.0',
+silly versions     '1.3.1',
+silly versions     '1.3.2',
+silly versions     '1.3.3',
+silly versions     '1.4.0',
+silly versions     '1.4.1',
+silly versions     '1.4.2',
+silly versions     '1.4.3',
+silly versions     '1.4.4',
+silly versions     '1.5.0',
+silly versions     '1.5.1',
+silly versions     '1.5.2',
+silly versions     '1.6.0' ] ]
+verbose bin dist [ '0.6-ares1.7.5-evundefined-openssl1.0.1-v83.7.12.22-linux-x64-3.11.0-26-generic',
+verbose bin dist   { shasum: '8b38b10cacdef63337b8b24e4ff86d45aea529a8',
+verbose bin dist     tarball: 'http://registry.npmjs.org/underscore/-/underscore-1.6.0.tgz' } ]
+http 200 http://registry.npmjs.org/minimatch
+silly get cb [ 200,
+silly get cb   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+silly get cb     etag: '"8BE0H77HYEMOV44C370B7AM9H"',
+silly get cb     'content-type': 'application/json',
+silly get cb     'cache-control': 'max-age=60',
+silly get cb     'content-length': '32477',
+silly get cb     'accept-ranges': 'bytes',
+silly get cb     date: 'Wed, 30 Jul 2014 21:32:32 GMT',
+silly get cb     via: '1.1 varnish',
+silly get cb     age: '1989',
+silly get cb     connection: 'keep-alive',
+silly get cb     'x-served-by': 'cache-ams4135-AMS',
+silly get cb     'x-cache': 'HIT',
+silly get cb     'x-cache-hits': '2',
+silly get cb     'x-timer': 'S1406755952.196256,VS0,VE0',
+silly get cb     vary: 'Accept' } ]
+verbose caching /home/sean/.npm/underscore/1.6.0/package/package.json
+verbose loadDefaults underscore@1.6.0
+silly name, range, hasData 2 [ 'minimatch', '>=0.0.0- <1.0.0-', true ]
+silly versions [ 'minimatch',
+silly versions   [ '0.0.1',
+silly versions     '0.0.2',
+silly versions     '0.0.4',
+silly versions     '0.0.5',
+silly versions     '0.1.1',
+silly versions     '0.1.2',
+silly versions     '0.1.3',
+silly versions     '0.1.4',
+silly versions     '0.1.5',
+silly versions     '0.2.0',
+silly versions     '0.2.2',
+silly versions     '0.2.3',
+silly versions     '0.2.4',
+silly versions     '0.2.5',
+silly versions     '0.2.6',
+silly versions     '0.2.7',
+silly versions     '0.2.8',
+silly versions     '0.2.9',
+silly versions     '0.2.10',
+silly versions     '0.2.11',
+silly versions     '0.2.12',
+silly versions     '0.2.13',
+silly versions     '0.2.14',
+silly versions     '0.3.0',
+silly versions     '0.4.0',
+silly versions     '1.0.0' ] ]
+verbose bin dist [ '0.6-ares1.7.5-evundefined-openssl1.0.1-v83.7.12.22-linux-x64-3.11.0-26-generic',
+verbose bin dist   { shasum: 'bd2c7d060d2c8c8fd7cde7f1f2ed2d5b270fdb1b',
+verbose bin dist     tarball: 'http://registry.npmjs.org/minimatch/-/minimatch-0.4.0.tgz' } ]
+verbose addRemoteTarball [ 'http://registry.npmjs.org/minimatch/-/minimatch-0.4.0.tgz',
+verbose addRemoteTarball   'bd2c7d060d2c8c8fd7cde7f1f2ed2d5b270fdb1b' ]
+verbose mkdir (expected) error ENOENT, no such file or directory '/tmp/npm-1406755952220'
+verbose mkdir (expected) error ENOENT, no such file or directory '/tmp/npm-1406755952220/1406755952220-0.5808928972110152'
+verbose mkdir done: /tmp/npm-1406755952220/1406755952220-0.5808928972110152 755
+verbose fetch to /tmp/npm-1406755952220/1406755952220-0.5808928972110152/tmp.tgz
+http GET http://registry.npmjs.org/minimatch/-/minimatch-0.4.0.tgz
+http 200 http://registry.npmjs.org/console-browserify
+silly get cb [ 200,
+silly get cb   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+silly get cb     etag: '"EY589LFCWL0XYKA2QARVMKMB6"',
+silly get cb     'content-type': 'application/json',
+silly get cb     'cache-control': 'max-age=60',
+silly get cb     'content-length': '17382',
+silly get cb     'accept-ranges': 'bytes',
+silly get cb     date: 'Wed, 30 Jul 2014 21:32:32 GMT',
+silly get cb     via: '1.1 varnish',
+silly get cb     age: '2826',
+silly get cb     connection: 'keep-alive',
+silly get cb     'x-served-by': 'cache-ams4120-AMS',
+silly get cb     'x-cache': 'HIT',
+silly get cb     'x-cache-hits': '1',
+silly get cb     'x-timer': 'S1406755952.260835,VS0,VE0',
+silly get cb     vary: 'Accept' } ]
+verbose mkdir (expected) error ENOENT, no such file or directory '/home/sean/.npm/console-browserify'
+verbose mkdir done: /home/sean/.npm/console-browserify 755
+silly name, range, hasData 2 [ 'console-browserify', '>=1.1.0- <1.2.0-', true ]
+silly versions [ 'console-browserify',
+silly versions   [ '0.1.0',
+silly versions     '0.1.1',
+silly versions     '0.1.2',
+silly versions     '0.1.3',
+silly versions     '0.1.4',
+silly versions     '0.1.5',
+silly versions     '0.1.6',
+silly versions     '1.0.1',
+silly versions     '1.0.2',
+silly versions     '1.0.3',
+silly versions     '1.1.0' ] ]
+verbose bin dist [ '0.6-ares1.7.5-evundefined-openssl1.0.1-v83.7.12.22-linux-x64-3.11.0-26-generic',
+verbose bin dist   { shasum: 'f0241c45730a9fc6323b206dbf38edc741d0bb10',
+verbose bin dist     tarball: 'http://registry.npmjs.org/console-browserify/-/console-browserify-1.1.0.tgz' } ]
+verbose addRemoteTarball [ 'http://registry.npmjs.org/console-browserify/-/console-browserify-1.1.0.tgz',
+verbose addRemoteTarball   'f0241c45730a9fc6323b206dbf38edc741d0bb10' ]
+http 200 http://registry.npmjs.org/exit
+silly get cb [ 200,
+silly get cb   { server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+silly get cb     etag: '"7PMTUAYK2EXLIVTEBAUSVFFB9"',
+silly get cb     'content-type': 'application/json',
+silly get cb     'cache-control': 'max-age=1',
+silly get cb     via: '1.1 varnish',
+silly get cb     'content-length': '14901',
+silly get cb     'accept-ranges': 'bytes',
+silly get cb     date: 'Wed, 30 Jul 2014 21:32:32 GMT',
+silly get cb     age: '928934',
+silly get cb     connection: 'keep-alive',
+silly get cb     'x-served-by': 'cache-v41-ASH, cache-ams4135-AMS',
+silly get cb     'x-cache': 'HIT, HIT',
+silly get cb     'x-cache-hits': '1, 14',
+silly get cb     'x-timer': 'S1406755952.264664,VS0,VE0',
+silly get cb     vary: 'Accept' } ]
+verbose mkdir (expected) error ENOENT, no such file or directory '/tmp/npm-1406755952220/1406755952250-0.16232358920387924'
+verbose mkdir (expected) error ENOENT, no such file or directory '/home/sean/.npm/exit'
+verbose mkdir done: /tmp/npm-1406755952220/1406755952250-0.16232358920387924 755
+verbose fetch to /tmp/npm-1406755952220/1406755952250-0.16232358920387924/tmp.tgz
+verbose mkdir done: /home/sean/.npm/exit 755
+http GET http://registry.npmjs.org/console-browserify/-/console-browserify-1.1.0.tgz
+silly name, range, hasData 2 [ 'exit', '>=0.1.0- <0.2.0-', true ]
+silly versions [ 'exit', [] ]
+verbose about to build /usr/local/lib/node_modules/jshint
+ERR! error installing jshint@2.5.2
+info unbuild /usr/local/lib/node_modules/jshint
+verbose from cache /usr/local/lib/node_modules/jshint/package.json
+info preuninstall jshint@2.5.2
+info uninstall jshint@2.5.2
+verbose unbuild jshint@2.5.2 [ true,
+verbose unbuild jshint@2.5.2   '/usr/local/lib/node_modules',
+verbose unbuild jshint@2.5.2   '/usr/local/lib/node_modules' ]
+verbose binRoot [ '/usr/local/bin', { jshint: './bin/jshint' } ]
+info postuninstall jshint@2.5.2
+verbose installOne cb jshint@2.5.2
+ERR! Error: No compatible version found: exit@'>=0.1.0- <0.2.0-'
+ERR! No valid targets found.
+ERR! Perhaps not compatible with your version of node?
+ERR!     at installTargetsError (/usr/share/npm/lib/cache.js:488:10)
+ERR!     at next_ (/usr/share/npm/lib/cache.js:438:17)
+ERR!     at next (/usr/share/npm/lib/cache.js:415:44)
+ERR!     at /usr/share/npm/lib/cache.js:408:5
+ERR!     at saved (/usr/share/npm/lib/utils/npm-registry-client/get.js:147:7)
+ERR!     at Object.oncomplete (/usr/lib/nodejs/graceful-fs.js:230:7)
+ERR! You may report this log at:
+ERR!     <http://bugs.debian.org/npm>
+ERR! or use
+ERR!     reportbug --attach /home/sean/Documents/Development/Javascript/Angular_Mongo_Node-Tutorial/Samples/npm-debug.log npm
+ERR! 
+ERR! System Linux 3.11.0-26-generic
+ERR! command "node" "/usr/bin/npm" "install" "-g" "jshint"
+ERR! cwd /home/sean/Documents/Development/Javascript/Angular_Mongo_Node-Tutorial/Samples
+ERR! node -v v0.6.12
+ERR! npm -v 1.1.4
+ERR! message No compatible version found: exit@'>=0.1.0- <0.2.0-'
+ERR! message No valid targets found.
+ERR! message Perhaps not compatible with your version of node?
+verbose exit [ 1, true ]
