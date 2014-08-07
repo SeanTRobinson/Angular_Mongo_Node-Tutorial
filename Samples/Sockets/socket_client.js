@@ -33,7 +33,7 @@ function writeData(socket, data){
         writeData(socket, data);
       });
     })(socket, data);
-  }
+  }  
 }
 var Dwarves = getConnection("Dwarves");
 var Elves = getConnection("Elves");
