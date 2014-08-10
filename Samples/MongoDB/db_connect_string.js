@@ -1,5 +1,5 @@
 var MongoClient = require('mongodb').MongoClient;
-MongoClient.connect("mongodb://dbAdmin:dbAdmin@localhost:27017/testDB", {
+MongoClient.connect("mongodb://testuser:testpass@localhost:27017/testDB", {
     db: { w: 1, native_parser: false },
     server: {
         poolSize: 5,
@@ -11,6 +11,7 @@ MongoClient.connect("mongodb://dbAdmin:dbAdmin@localhost:27017/testDB", {
 }, function(err, db) {
     if(err) {
         console.log("Connection failed via connection string ...");
+        console.log(err);
     } else {
         console.log("Connected via connection string ...");
         db.logout(function(err, result) {
