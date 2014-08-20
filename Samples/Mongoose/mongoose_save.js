@@ -13,7 +13,7 @@ mongoose.connection.once('open', function() {
         console.log("Modifed Fields: ");
         console.log(doc.modifiedPaths());
         doc.save(function(err) {
-            Words.findOne( {word: 'book'}, function(err, doc) {
+            Words.findOne( {word: 'Book'}, function(err, doc) {
                 console.log("After Save: ");
                 console.log(doc.toJSON());
                 mongoose.disconnect();
