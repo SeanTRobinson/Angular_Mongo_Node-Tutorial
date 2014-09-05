@@ -1,0 +1,23 @@
+<!doctype html>
+<html ng-app="myApp">
+    <head>
+        <title>Angular Scope Example</title>
+    </head>
+    <body>
+        <div ng-controller="Counter">
+            Start: {{start}}<br>
+            Current: {{current}}<br>
+            Difference: {{difference}}<br>
+            Change: {{change}}<br>
+
+            <hr>
+
+            <input type="button" value="Increment" name="Increment" ng-click="inc()">
+            <input type="button" value="Decrement" name="Decrement" ng-click="dec()">
+
+        </div>
+
+        <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
+        <script src="./js/scope_controller.js"></script>
+    </body>
+</html>

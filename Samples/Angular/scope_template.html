@@ -1,0 +1,19 @@
+<!doctype html>
+<html ng-app="myApp">
+    <head>
+        <title>Angular Templates and Scope</title>
+    </head>
+    <body>
+        <div ng-controller="SimpleTemplate">
+            ValueA: <input type="number" ng-model="valueA" /><br>
+            ValueB: <input type="number" ng-model="valueB" /><br>
+            Expression Value: {{valueA + valueB}}<br><br>
+
+            <input type="button" ng-click="addValues(valueA, valueB)"
+                value="Click to add values {{valueA}} + {{valueB}}" /><br>
+        </div>
+        
+        <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
+        <script src="./js/scope_template.js"></script>
+    </body>
+</html>
